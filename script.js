@@ -1,31 +1,25 @@
-console.log("loaded")
+/*function getFirstChars(str, n) {
+  let result = ""
 
-function logClick() {
-  console.log("click")
+  result = str.substring(0, n + 1)
+
+  return result
 }
 
-function logParam(param) {
-  console.log(param)
+console.log(getFirstChars("Codecool", 5));*/
+
+
+/*let text = "lorem ipsum dolor et"
+
+console.log(text.substring(6, 11))
+
+const obj = {
+  firstName: "Mark",
+  lastName: "Bodis",
+  getFullName: function() {
+    return obj.firstName + obj.lastName
+  }
 }
 
-window.addEventListener("load", () => {
-  const rootElement = document.querySelector("#root")
-  console.log(rootElement)
+console.log(obj.getFullName())*/
 
-  rootElement.innerHTML = "lorem ipsum"
-
-  window.addEventListener("click", logClick)
-
-  window.addEventListener("click", () => logParam("logParam parameter"))
-
-  let count = 0;
-  setInterval(() => {
-    count++;
-
-    if (count % 2 === 0) {
-      console.log("tock")
-    } else {
-      console.log("tick")
-    }
-  }, 1000)
-})
